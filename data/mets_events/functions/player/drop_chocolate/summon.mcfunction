@@ -1,0 +1,4 @@
+execute in mets:superflat unless score $rand mets_events.game matches 0 run summon item 1204 100.5 127 {Item:{id:"nether_brick",Count:1b,tag:{chocolate:1b,display:{Name:'{"text":"チョコレート","italic": false}',Lore:['"とっても美味しいチョコレート"','""','"原材料名 砂糖、カカオ、チョコ"']}}},Age:32768,Invulnerable:1b,Tags:["mets_event.chocolate"]}
+execute in mets:superflat if score $rand mets_events.game matches 0 run summon item 1204 100.5 127 {Item:{id:"gold_ingot",Count:1b,tag:{chocolate:3b,display:{Name:'{"text":"特別なチョコレート","italic": false}',Lore:['"とっても美味しいチョコレート"','"をラッピングしただけなのに"','"なぜかすごくおいしい"','""','"原材料名 砂糖、チョコ、カカオ"']}}},Age:32768,Invulnerable:1b,Tags:["mets_event.chocolate"]}
+
+playsound block.moss.hit master @a 1204 100.5 127 1 2 1

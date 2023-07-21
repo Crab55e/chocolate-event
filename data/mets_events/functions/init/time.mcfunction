@@ -1,0 +1,1 @@
+scoreboard players set $timer mets_events.game 6000

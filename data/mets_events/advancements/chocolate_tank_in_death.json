@@ -1,0 +1,46 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [{
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Health:0.0f}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{OnGround:1b}",
+                            "location": {
+                                "position": {
+                                    "x": {
+                                        "min": 1156,
+                                        "max": 1251
+                                    },
+                                    "y": {
+                                        "min": 0,
+                                        "max": 80
+                                    },
+                                    "z": {
+                                        "min": 79,
+                                        "max": 175
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "mets_events:player/chocolate_tank_in_death"
+    }
+}
